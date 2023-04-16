@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>">
+    
+    <style>
+          #mydiv{
+    background-color: goldenrod;
+    font-size: larger;
+    padding: 20px;
+    margin: 10px 300px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#tb1{
+     width: 70%;
+     border: 1px solid ;
+     font-size: 20px;
+     text-align: center;
+     background-color: orange;
+     padding: 10px;
+     margin: 5px 230px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+}
+#button{
+    background-color: rgb(154, 7, 245);
+    padding: 10px;
+    margin: 5px;
+    font-size: large;
+    margin: 20px 670px;
+    
+}
+
+#heading_div{
+    background-color:royalblue;
+    width: 60%;
+    height: 50px;
+    margin: 20px 300px;
+}
+#heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+    </style>
+   
+</head>
+<body>
+    <div>
+    <br>
+    <div id="heading_div">
+    <h1 align="center" id="heading">Student Attendance Management System</h1><br><br>
+    </div>
+    <br><hr>
+
+    <form method="post" name="sample">
+        <div id="mydiv">
+            Enter Roll no:- <input type="number" id="rollno" placeholder="Roll no."><br><br>
+            Enter Student name:- <input type="text" id="name" placeholder="eg. Manish"><br><br>
+            Enter the course opted:- <input type="text" id="course" placeholder=" course "><br><br>
+            Enter Student Performance:- <input type="text" id="performance" placeholder="Performance"><br><br>
+            Attendance <input type="number" id="attendance" placeholder="Attendance">
+        </div>
+           <input  type="button" name="add" value="Add Record" onclick="addrecord();" id="button">
+
+           <table id="tb1" class="table" >
+            <thead>
+                <th>Roll No</th>
+                <th>Student name</th>
+                <th> course</th>
+                <th>Performance</th>
+                <th>Attendance </th>
+            </thead>
+             
+            <tbody>
+    
+            </tbody>
+        
+        </table>
+    </form>
+    </div> 
+
+   
+
+    <script>
+        function addrecord(){
+            var  rollno=document.sample.rollno.value;
+            var name=document.sample.name.value;
+            var course=document.sample.course.value;
+            var performance=document.sample.performance.value;
+            var attendance=document.sample.attendance.value;
+
+            var tr=document.createElement('tr');
+
+           
+            var td1= tr.appendChild(document.createElement('td'));
+            var td2= tr.appendChild(document.createElement('td'));
+            var td3= tr.appendChild(document.createElement('td'));
+            var td4= tr.appendChild(document.createElement('td'));
+            var td5= tr.appendChild(document.createElement('td'));
+
+            td1.innerHTML=rollno;
+            td2.innerHTML=name;
+            td3.innerHTML=course;
+            td4.innerHTML=performance;
+            td5.innerHTML=attendance;
+
+            document.getElementById("tb1").appendChild(tr);
+        }
+
+    </script>
+
+ </body>
+</html>

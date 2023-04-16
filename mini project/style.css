@@ -1,0 +1,38 @@
+#mydiv{
+    background-color: goldenrod;
+    font-size: larger;
+    padding: 20px;
+    margin: 10px 300px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#tb1{
+     width: 70%;
+     border: 1px solid ;
+     font-size: 20px;
+     text-align: center;
+     background-color: orange;
+     padding: 10px;
+     margin: 5px 230px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+}
+#button{
+    background-color: rgb(154, 7, 245);
+    padding: 10px;
+    margin: 5px;
+    font-size: large;
+    margin: 20px 670px;
+    
+}
+
+#heading_div{
+    background-color:royalblue;
+    width: 60%;
+    height: 50px;
+    margin: 20px 300px;
+}
+#heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
